@@ -1,0 +1,25 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "cross-env NODE_ENV=test mocha ./api/user/user.spec.js -w",
+    "start": "cross-env node ./bin/www"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "description": "",
+  "dependencies": {
+    "express": "^4.16.4",
+    "morgan": "^1.9.1",
+    "sequelize": "^4.42.0",
+    "sqlite3": "^4.0.4"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0",
+    "mocha": "^5.2.0",
+    "should": "^13.2.3",
+    "supertest": "^3.3.0"
+  }
+}
